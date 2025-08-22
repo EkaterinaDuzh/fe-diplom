@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "license": "ISC",
-  "main": "main.jsx",
+  "main": "main.tsx",
   "type": "module",
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.2",
