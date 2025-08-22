@@ -204,11 +204,11 @@ const MyDatePicker = ({ isStart, isInForm }: IMyDatePickerProps) => {
     setCalendarOpen(!calendarOpen);
   };
 
-  const handleOutsideClick = (event: any) => {
-    if (event.target !== refIcon.current) {
-      setCalendarOpen(false);
-    }
-  };
+const handleOutsideClick = (event: MouseEvent) => {
+  if (refIcon.current && !refIcon.current.contains(event.target as Node)) {
+    setCalendarOpen(false);
+  }
+};
 
   const handleInputClick = () => {
     setCalendarOpen(true);
