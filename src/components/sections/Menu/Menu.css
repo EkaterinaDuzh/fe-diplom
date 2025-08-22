@@ -1,0 +1,37 @@
+.menu {
+  padding: 0.5rem 16.125rem 0.5rem;
+  background: #292929;
+}
+
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5.3125rem;
+  margin: 0;
+  padding-left: 0;
+}
+
+.menu__link {
+  font-family: var(--font-family);
+  font-size: 1.875rem;
+  font-weight: 300;
+  color: #fff;
+  cursor: pointer;
+  padding: 25px 15px;
+}
+
+.menu__link:focus-visible,
+.menu__link:hover {
+  color: #ffa800;
+}
+
+@media (max-width: 1330px) {
+  .menu {
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
+  }
+
+  .menu__list {
+    gap: 2.1875rem;
+  }
+}

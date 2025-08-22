@@ -1,0 +1,22 @@
+.order-page {
+  position: relative;
+
+  height: 1080px;
+
+  background-color: #e5e5e5;
+}
+
+.order-page__container {
+  position: absolute;
+  top: -257px;
+  left: 0;
+  right: 0;
+
+  padding: 50px 257px;
+}
+
+@media (max-width: 1830px) {
+  .order-page__container {
+    padding: 50px;
+  }
+}

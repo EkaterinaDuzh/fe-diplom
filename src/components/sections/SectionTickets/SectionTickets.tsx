@@ -1,0 +1,46 @@
+import { useSelector } from 'react-redux';
+import { RootState } from '../../../redux/store';
+import ArticleTicket from '../../widgets/Article/ArticleTicket/ArticleTicket';
+import Pagination from '../../UI/navigation/Pagination';
+import TicketsView from '../../widgets/TicketsView/TicketsView';
+import './SectionTickets.css';
+
+const SectionTickets = () => {
+  const { trains, currentCount, currentPage } = useSelector(
+    (state: RootState) => state.trains
+  );
+
+  const startIndex = (currentPage - 1) * currentCount;
+  const endIndex = startIndex + currentCount;
+
+  const trainsToDisplay = trains.slice(startIndex, endIndex);
+
+  return (
+    <section className="tickets">
+      <h2 className="visually-hidden">Билеты</h2>
+
+      {trains.length ? (
+        <>
+          <TicketsView />
+
+          <div className="tickets__list">
+            
+            {trainsToDisplay.map((_, index) => (
+              <ArticleTicket
+                key={index}
+                index={startIndex + index}
+                text="Выбрать места"
+              />
+            ))}
+          </div>
+
+          <Pagination />
+        </>
+      ) : (
+        <p className="tickets__empty">По вашему запросу ничего не найдено...</p>
+      )}
+    </section>
+  );
+};
+
+export default SectionTickets;
