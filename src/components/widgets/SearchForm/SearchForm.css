@@ -100,9 +100,3 @@
   color: #ffa800;
   background-color: #fff;
 }
-
-@media (max-width: 992px) {
-  .search-form__btn {
-    margin-right: auto;
-  }
-}

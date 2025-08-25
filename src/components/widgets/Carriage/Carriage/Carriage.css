@@ -132,11 +132,3 @@
   color: #c4c4c4;
   text-transform: uppercase;
 }
-
-@media (max-width: 992px) {
-  .carriage__content {
-    gap: 15px;
-
-    padding-right: 20px;
-  }
-}

@@ -23,13 +23,14 @@
 
 .header-home__content {
   display: flex;
-  gap: 9.1875rem;
-  justify-content: flex-end;
+  max-width: 1400px;
+  margin: 0 auto;
+  justify-content: center;
   align-items: center;
-  padding: 15.9375rem 14.625rem 0;
+  padding-top: 16rem;
 }
 
-@media (max-width: 1830px) {
+@media (max-width: 1430px) {
   .header-home__content {
     flex-direction: column;
     gap: 0;
@@ -37,7 +38,7 @@
   }
 }
 
-@media (max-width: 1330px) {
+@media (max-width: 1230px) {
   .header-home__top-container {
     padding-left: 3.125rem;
     padding-right: 3.125rem;

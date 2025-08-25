@@ -64,9 +64,3 @@
 .payment-method__input:focus + .payment-method__label::before {
   border: 3px solid #ffa800;
 }
-
-@media (max-width: 992px) {
-  .payment-method__online-list {
-    padding-right: 0;
-  }
-}

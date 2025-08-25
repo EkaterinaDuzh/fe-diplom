@@ -27,9 +27,3 @@
   cursor: pointer;
   background-image: url("./img/destination-active.svg");
 }
-
-@media (max-width: 992px) {
-  .destination__input {
-    width: 15.625rem;
-  }
-}

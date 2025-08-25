@@ -88,9 +88,3 @@
 .documents__type-item:last-child {
   border-radius: 0 0 5px 5px;
 }
-
-@media (max-width: 992px) {
-  .documents {
-    gap: 20px;
-  }
-}
